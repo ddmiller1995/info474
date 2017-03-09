@@ -1,0 +1,157 @@
+/*
+	Dakota Miller
+	INFO 474 Assignment 3 Part 2
+	Interactive Visualization Styles
+*/
+
+body {
+	font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h2 {
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+#loading {
+	margin: 40px auto;
+	text-align: center;
+}
+
+#map, #graph {
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: none;
+}
+
+#map {
+	border-bottom: 1px solid black;
+	position: relative;
+}
+
+#nav {
+	width: 50%;
+	margin: 175px auto;
+	text-align: center;
+}
+
+#nav button {
+	width: 300px;
+	height: 100px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+#nav a {
+	text-decoration: none;
+	color: black;
+}
+
+#nav a:visited {
+	color: black;
+}
+
+/* Map Styles */
+
+.map {
+	display: block;
+	margin: 20px auto;
+	margin-bottom: 0px;
+}
+
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+
+circle:hover {
+	cursor: pointer;
+}
+
+.tooltip {
+	position: absolute;
+	pointer-events: none;
+	border: 1px solid #ccc;
+	background-color: #AAA;
+	padding: 3px;
+}
+
+.slider-map-container {
+	margin: 0px auto;
+	text-align: center;
+}
+
+.slider-map {
+	width: 1000px;
+	margin: 0;
+	display: inline;
+}
+
+.label {
+	position: absolute;
+}
+
+.airport-legend {
+	position: absolute;
+	top: 500px;
+	right: 200px;
+	width: 220px;
+}
+
+.airport-legend svg {
+	padding-top: 10px;
+}
+
+/* Graph Styles */
+
+.bar {
+	fill: #AED6F1;
+	stroke: #fff;
+	stroke-linejoin: round;
+	stroke-width: 1px;
+}
+
+.bar:hover {
+	fill: red;
+}
+
+.graph: {
+	float:right;
+	display: block;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 0px;
+}
+
+#controls {
+	padding: 10px;
+	width: 300px;
+	float:left;
+	margin-left: 10%;
+	margin-right: 2%;
+}
+
+#controls input {
+	margin-bottom: 10px;
+}
+
+#controls p {
+	margin-bottom: 5px;
+}
+
+.axis {
+	font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
